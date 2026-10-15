@@ -1,0 +1,26 @@
+:root { color-scheme: light dark; --bg:#f9f4ee; --card:#fffdf9; --ink:#5b4636; --muted:#725e4f; --link:#a94d20; --line:#d9cbbc; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif; font-size:1rem; line-height:1.85; overflow-wrap:anywhere; }
+header,main,footer { width:min(100% - 2.5rem,48rem); margin-inline:auto; }
+header { padding-block:2.5rem 1rem; }
+.brand { display:inline-flex; align-items:center; gap:.8rem; color:var(--ink); text-decoration:none; font-weight:700; }
+.brand img { width:3.5rem; height:3.5rem; border-radius:.8rem; }
+nav { display:flex; flex-wrap:wrap; gap:.4rem 1.5rem; margin-block:1.2rem; }
+a { color:var(--link); text-underline-offset:.22em; }
+a:focus-visible,summary:focus-visible { outline:3px solid var(--link); outline-offset:4px; }
+nav a { display:inline-flex; align-items:center; min-height:44px; }
+h1 { font-size:clamp(1.8rem,5vw,2.5rem); line-height:1.4; margin-block:.8rem; }
+h2 { font-size:1.35rem; line-height:1.5; margin-block:2rem .7rem; }
+h3 { font-size:1.05rem; margin-block:1rem .3rem; }
+p { margin-block:.6rem 1rem; }
+ul,ol { padding-left:1.5rem; }
+.lead { font-size:1.12rem; color:var(--muted); }
+.notice { border:1px solid var(--line); padding:1rem 1.2rem; border-radius:.65rem; background:var(--card); }
+details { border-bottom:1px solid var(--line); padding-block:.7rem; }
+summary { cursor:pointer; font-weight:650; min-height:44px; align-content:center; }
+details p { padding-inline:.4rem; }
+.action { display:inline-flex; align-items:center; min-height:48px; padding:.45rem 1rem; border:1px solid var(--link); border-radius:.5rem; font-weight:650; }
+.meta,footer { color:var(--muted); font-size:.9rem; }
+footer { padding-block:2rem 3rem; border-top:1px solid var(--line); margin-top:3rem; }
+@media(prefers-color-scheme:dark) { :root { --bg:#241c16; --card:#31271f; --ink:#f9f4ee; --muted:#cdbfaf; --link:#ebb88f; --line:#746354; } }
+@media(prefers-reduced-motion:no-preference) { html { scroll-behavior:smooth; } }

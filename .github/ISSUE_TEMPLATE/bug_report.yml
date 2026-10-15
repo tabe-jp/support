@@ -1,0 +1,43 @@
+name: 不具合の報告
+description: Tabeの動作について報告する
+title: "[不具合] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この投稿は公開されます。料理名・写真・メモ・バックアップ・Apple Account・パスワード・購入明細・端末の識別番号は投稿しないでください。
+        スクリーンショットを添付する場合は、個人データを隠してください。
+  - type: input
+    id: version
+    attributes:
+      label: Tabeのバージョン
+      description: アプリの設定で確認できます。
+    validations:
+      required: true
+  - type: input
+    id: ios
+    attributes:
+      label: iOSのバージョン
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 問題が起きた操作
+      description: 個人データを含めず、画面名と操作の順番を教えてください。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 実際の動作と期待した動作
+      description: エラーがある場合は、個人データを除いた文言を記載してください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開内容の確認
+      options:
+        - label: 個人データ・認証情報・バックアップを含めていません。
+          required: true

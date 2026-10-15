@@ -1,0 +1,20 @@
+name: 使い方の質問・改善の提案
+description: Tabeの使い方や改善について相談する
+body:
+  - type: markdown
+    attributes:
+      value: この投稿は公開されます。料理名・写真・メモ・バックアップ・認証情報・購入明細は投稿しないでください。
+  - type: textarea
+    id: question
+    attributes:
+      label: ご質問・ご提案
+      description: 個人データを含めずに記載してください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開内容の確認
+      options:
+        - label: 個人データ・認証情報・バックアップを含めていません。
+          required: true
